@@ -15,13 +15,13 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
       style={{ backgroundColor: "var(--color-neutral-silver)" }}
     >
       <div
-        className="mx-auto px-6 md:px-12 lg:px-[144px] py-12 md:py-16 lg:py-20"
+        className="mx-auto px-4 sm:px-6 md:px-12 lg:px-[144px] py-10 sm:py-12 md:py-16 lg:py-20"
         style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
       >
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 lg:gap-16">
 
           {/* Tesla image */}
-          <div className="flex-shrink-0 w-full max-w-[280px] lg:max-w-[326px]">
+          <div className="flex-shrink-0 w-full max-w-[220px] sm:max-w-[280px] lg:max-w-[326px]">
             <Image
               src={data.image.src}
               alt={data.image.alt}
@@ -33,7 +33,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
           </div>
 
           {/* Quote column */}
-          <div className="flex flex-col gap-6 flex-1">
+          <div className="flex flex-col gap-6 flex-1 w-full">
             <blockquote>
               <p
                 style={{
@@ -74,7 +74,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
             {/* Client logo strip + meet-all link */}
             <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-2">
               <div
-                className="flex flex-wrap items-center gap-6 lg:gap-8"
+                className="flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6 lg:gap-8"
                 role="list"
                 aria-label="Featured clients"
               >
@@ -86,7 +86,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
                       width={80}
                       height={32}
                       unoptimized
-                      className="h-8 w-auto object-contain transition-transform duration-200 hover:scale-105"
+                      className="h-6 sm:h-8 w-auto object-contain transition-transform duration-200 hover:scale-105"
                     />
                   </div>
                 ))}

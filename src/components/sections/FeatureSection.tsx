@@ -16,21 +16,21 @@ export default function FeatureSection({ data }: FeatureSectionProps) {
   return (
     <section id={data.id} aria-label={data.title} className="bg-white">
       <div
-        className="mx-auto px-6 md:px-12 lg:px-[144px] py-12 md:py-16 lg:py-20"
+        className="mx-auto px-4 sm:px-6 md:px-12 lg:px-[144px] py-10 sm:py-12 md:py-16 lg:py-20"
         style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
       >
         <div
-          className={`flex flex-col ${imageLeft ? "lg:flex-row" : "lg:flex-row-reverse"} items-center gap-10 lg:gap-16`}
+          className={`flex flex-col ${imageLeft ? "lg:flex-row" : "lg:flex-row-reverse"} items-center gap-8 sm:gap-10 lg:gap-16`}
         >
           {/* Illustration */}
-          <div className="w-full max-w-sm sm:max-w-md lg:max-w-none lg:flex-1 flex justify-center">
+          <div className="w-full max-w-[280px] sm:max-w-[360px] lg:max-w-none lg:flex-1 flex justify-center">
             <Image
               src={data.image.src}
               alt={data.image.alt}
               width={data.image.width}
               height={data.image.height}
               unoptimized
-              className="w-full h-auto max-w-[442px]"
+              className="w-full h-auto max-w-[280px] sm:max-w-[360px] lg:max-w-[442px]"
             />
           </div>
 

@@ -21,11 +21,11 @@ export default function Header({ data }: HeaderProps) {
       style={{ backgroundColor: "var(--color-neutral-silver)" }}
     >
       <div
-        className="mx-auto px-6 md:px-12 lg:px-[144px]"
+        className="mx-auto px-4 sm:px-6 md:px-12 lg:px-[144px]"
         style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
       >
         <nav
-          className="relative flex h-[84px] items-center justify-between"
+          className="relative flex h-[72px] sm:h-[84px] items-center justify-between"
           aria-label="Main navigation"
         >
           {/* Logo */}
@@ -37,6 +37,7 @@ export default function Header({ data }: HeaderProps) {
               height={data.logo.height}
               priority
               unoptimized
+              className="h-6 sm:h-8 w-auto object-contain"
             />
           </Link>
 

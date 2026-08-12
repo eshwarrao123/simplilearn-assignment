@@ -15,18 +15,18 @@ export default function HeroSection({ data }: HeroSectionProps) {
       style={{ backgroundColor: "var(--color-neutral-silver)" }}
     >
       <div
-        className="mx-auto px-6 md:px-12 lg:px-[144px] py-16 md:py-20 lg:py-24"
+        className="mx-auto px-4 sm:px-6 md:px-12 lg:px-[144px] py-10 sm:py-16 md:py-20 lg:py-24"
         style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
       >
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10 lg:gap-16">
 
           {/* ── Left: text content ── */}
-          <div className="flex flex-col gap-6 w-full lg:max-w-[540px]">
+          <div className="flex flex-col gap-4 sm:gap-6 w-full lg:max-w-[540px]">
             <h1
               className="font-semibold"
               style={{
                 color: "var(--color-neutral-black)",
-                fontSize: "clamp(2rem, 5vw, var(--font-size-h1))",
+                fontSize: "clamp(1.875rem, 5vw, var(--font-size-h1))",
                 lineHeight: "var(--line-height-h1)",
               }}
             >
@@ -57,7 +57,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
           </div>
 
           {/* ── Right: illustration ── */}
-          <div className="w-full max-w-sm sm:max-w-md lg:max-w-none lg:flex-1 flex justify-center lg:justify-end">
+          <div className="w-full max-w-[280px] sm:max-w-[380px] lg:max-w-none lg:flex-1 flex justify-center lg:justify-end">
             <Image
               src={data.image.src}
               alt={data.image.alt}
@@ -65,7 +65,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
               height={data.image.height}
               priority
               unoptimized
-              className="w-full h-auto max-w-[520px] lg:max-w-none"
+              className="w-full h-auto max-w-[280px] sm:max-w-[380px] lg:max-w-[520px]"
             />
           </div>
 

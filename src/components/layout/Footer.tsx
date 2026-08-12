@@ -11,10 +11,10 @@ export default function Footer({ data }: FooterProps) {
   return (
     <footer style={{ backgroundColor: "var(--color-brand-secondary)" }}>
       <div
-        className="mx-auto px-6 md:px-12 lg:px-[144px] py-16"
+        className="mx-auto px-4 sm:px-6 md:px-12 lg:px-[144px] py-12 sm:py-16"
         style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
 
           {/* Column 1 — Brand + copyright + socials */}
           <div className="flex flex-col gap-6">

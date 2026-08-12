@@ -15,14 +15,14 @@ export default function ClientShowcase({ data }: ClientShowcaseProps) {
       className="bg-white border-b border-neutral-silver"
     >
       <div
-        className="mx-auto px-6 md:px-12 lg:px-[144px] py-10 md:py-12"
+        className="mx-auto px-4 sm:px-6 md:px-12 lg:px-[144px] py-8 sm:py-10 md:py-12"
         style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
       >
-        <div className="flex flex-col items-center gap-8 md:gap-10">
+        <div className="flex flex-col items-center gap-6 sm:gap-8 md:gap-10">
           <SectionHeader title={data.title} subtitle={data.subtitle} />
 
           <div
-            className="flex flex-wrap items-center justify-center gap-8 md:gap-10 lg:gap-14 w-full"
+            className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-14 w-full"
             role="list"
             aria-label="Client logos"
           >
@@ -38,7 +38,7 @@ export default function ClientShowcase({ data }: ClientShowcaseProps) {
                   width={120}
                   height={40}
                   unoptimized
-                  className="h-8 md:h-10 w-auto object-contain transition-transform duration-200 hover:scale-105"
+                  className="h-6 sm:h-8 md:h-10 w-auto object-contain transition-transform duration-200 hover:scale-105"
                 />
               </div>
             ))}

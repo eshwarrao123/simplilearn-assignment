@@ -12,20 +12,20 @@ export default function BlogSection({ data }: BlogSectionProps) {
   return (
     <section id="blog" aria-label="Community Updates" className="bg-white">
       <div
-        className="mx-auto px-6 md:px-12 lg:px-[144px] py-12 md:py-16 lg:py-20"
+        className="mx-auto px-4 sm:px-6 md:px-12 lg:px-[144px] py-10 sm:py-12 md:py-16 lg:py-20"
         style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
       >
-        <div className="flex flex-col items-center gap-10 md:gap-14">
+        <div className="flex flex-col items-center gap-8 md:gap-14">
           <SectionHeader title={data.title} subtitle={data.subtitle} />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 w-full pb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 w-full pb-4 sm:pb-8">
             {data.articles.map((article) => (
               <article
                 key={article.id}
-                className="flex flex-col items-center relative"
+                className="flex flex-col items-center relative mb-4 md:mb-0"
               >
                 {/* Article image */}
-                <div className="relative w-full h-[286px] rounded-lg overflow-hidden flex-shrink-0">
+                <div className="relative w-full h-[220px] sm:h-[260px] lg:h-[286px] rounded-lg overflow-hidden flex-shrink-0">
                   <Image
                     src={article.image.src}
                     alt={article.image.alt}
@@ -38,7 +38,7 @@ export default function BlogSection({ data }: BlogSectionProps) {
 
                 {/* Overlapping text container */}
                 <div
-                  className="relative w-[90%] -mt-24 p-4 md:p-5 lg:p-6 bg-[#F5F7FA] rounded-lg text-center flex flex-col items-center justify-between gap-4 min-h-[176px] transition-shadow duration-300 hover:shadow-card-hover"
+                  className="relative w-[90%] -mt-16 sm:-mt-20 lg:-mt-24 p-4 md:p-5 lg:p-6 bg-[#F5F7FA] rounded-lg text-center flex flex-col items-center justify-between gap-3 sm:gap-4 min-h-[150px] sm:min-h-[176px] transition-shadow duration-300 hover:shadow-card-hover"
                   style={{ boxShadow: "var(--shadow-card-hover)" }}
                 >
                   <h3

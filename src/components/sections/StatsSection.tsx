@@ -14,10 +14,10 @@ export default function StatsSection({ data }: StatsSectionProps) {
       style={{ backgroundColor: "var(--color-neutral-silver)" }}
     >
       <div
-        className="mx-auto px-6 md:px-12 lg:px-[144px] py-12 md:py-16 lg:py-20"
+        className="mx-auto px-4 sm:px-6 md:px-12 lg:px-[144px] py-10 sm:py-12 md:py-16 lg:py-20"
         style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
       >
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-12 lg:gap-16">
 
           {/* Left — headline + subtitle */}
           <div className="flex flex-col gap-2 w-full lg:max-w-[400px]">
@@ -47,9 +47,9 @@ export default function StatsSection({ data }: StatsSectionProps) {
           </div>
 
           {/* Right — 2×2 stats grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10 w-full lg:w-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 sm:gap-x-12 gap-y-6 sm:gap-y-10 w-full lg:w-auto">
             {data.items.map((stat) => (
-              <div key={stat.id} className="flex items-center gap-4 min-w-[200px]">
+              <div key={stat.id} className="flex items-center gap-3 sm:gap-4 min-w-0 sm:min-w-[200px]">
                 <Image
                   src={stat.icon.src}
                   alt={stat.icon.alt}
