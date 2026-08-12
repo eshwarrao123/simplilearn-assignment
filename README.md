@@ -4,7 +4,7 @@ A pixel-accurate, fully responsive, server-rendered implementation of the Nexcen
 
 ---
 
-## 🚀 Key Architectural Highlights
+##  Key Architectural Highlights
 
 - **100% Data-Driven Content:** Zero hardcoded copy in presentation components. All text, images, CTA links, section items, stats, testimonials, and navigation links flow from a centralized, typed JSON data store (`src/data/landing-page.json`).
 - **Server-First Component Model:** All section layouts are React Server Components by default. Client components (`MobileMenu.tsx`) are strictly limited to interactive browser-side features.
@@ -14,7 +14,7 @@ A pixel-accurate, fully responsive, server-rendered implementation of the Nexcen
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Framework:** Next.js 15 (App Router, Turbopack)
 - **Language:** TypeScript (Strict Type Checking)
@@ -24,7 +24,7 @@ A pixel-accurate, fully responsive, server-rendered implementation of the Nexcen
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 ├── app/
@@ -74,7 +74,7 @@ A pixel-accurate, fully responsive, server-rendered implementation of the Nexcen
 
 ---
 
-## 💻 Local Development Setup
+## Local Development Setup
 
 ### 1. Prerequisites
 Ensure Node.js `v18.x` or higher and `npm` are installed on your machine.
@@ -82,7 +82,7 @@ Ensure Node.js `v18.x` or higher and `npm` are installed on your machine.
 ### 2. Installation
 Clone the repository and install dependencies:
 ```bash
-git clone <repository-url>
+git clone https://github.com/eshwarrao123/simplilearn-assignment
 cd simplilearn-assignment
 npm install
 ```
@@ -96,7 +96,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ---
 
-## 🧪 Verification & Build Commands
+## Verification & Build Commands
 
 - **Code Formatting & Linting:**
   ```bash
@@ -113,6 +113,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ---
 
-## 🎨 Figma Source & Reference
+## Figma Source & Reference
 - **Figma Design File:** [Minimal Landing Page Design | Community](https://www.figma.com/design/NX5vl6kszVZ0OFVLAKJtSn/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=213-948)
 - **Node Identifier:** `213-948`
