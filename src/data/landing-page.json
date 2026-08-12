@@ -11,16 +11,40 @@
       "height": 32
     },
     "links": [
-      { "label": "Home",        "href": "#hero" },
-      { "label": "Service",     "href": "#community" },
-      { "label": "Feature",     "href": "#feature-1" },
-      { "label": "Product",     "href": "#stats" },
-      { "label": "Testimonial", "href": "#testimonial" },
-      { "label": "FAQ",         "href": "#faq" }
+      {
+        "label": "Home",
+        "href": "#hero"
+      },
+      {
+        "label": "Service",
+        "href": "#community"
+      },
+      {
+        "label": "Feature",
+        "href": "#feature-1"
+      },
+      {
+        "label": "Product",
+        "href": "#stats"
+      },
+      {
+        "label": "Testimonial",
+        "href": "#testimonial"
+      },
+      {
+        "label": "FAQ",
+        "href": "#faq"
+      }
     ],
     "actions": {
-      "login":  { "label": "Login",   "href": "#login" },
-      "signup": { "label": "Sign up", "href": "#signup" }
+      "login": {
+        "label": "Login",
+        "href": "#login"
+      },
+      "signup": {
+        "label": "Sign up",
+        "href": "#signup"
+      }
     }
   },
   "hero": {
@@ -32,28 +56,65 @@
       "href": "#register"
     },
     "image": {
-      "src": "/images/hero-illustration.svg",
+      "src": "/images/hero/hero-illustration.svg",
       "alt": "Developer working with laptop and wireframe UI",
       "width": 632,
       "height": 657
     },
     "indicators": [
-      { "id": 1, "active": true },
-      { "id": 2, "active": false },
-      { "id": 3, "active": false }
+      {
+        "id": 1,
+        "active": true
+      },
+      {
+        "id": 2,
+        "active": false
+      },
+      {
+        "id": 3,
+        "active": false
+      }
     ]
   },
   "clients": {
     "title": "Our Clients",
     "subtitle": "We have been working with some Fortune 500+ clients",
     "logos": [
-      { "id": "client-1", "src": "/images/logos/client-logo-1.svg", "alt": "Client 1" },
-      { "id": "client-2", "src": "/images/logos/client-logo-2.svg", "alt": "Client 2" },
-      { "id": "client-3", "src": "/images/logos/client-logo-3.svg", "alt": "Client 3" },
-      { "id": "client-4", "src": "/images/logos/client-logo-4.svg", "alt": "Client 4" },
-      { "id": "client-5", "src": "/images/logos/client-logo-5.svg", "alt": "Client 5" },
-      { "id": "client-6", "src": "/images/logos/client-logo-6.svg", "alt": "Client 6" },
-      { "id": "client-7", "src": "/images/logos/client-logo-7.svg", "alt": "Client 7" }
+      {
+        "id": "client-1",
+        "src": "/images/logos/client-logo-1.svg",
+        "alt": "Client 1"
+      },
+      {
+        "id": "client-2",
+        "src": "/images/logos/client-logo-2.svg",
+        "alt": "Client 2"
+      },
+      {
+        "id": "client-3",
+        "src": "/images/logos/client-logo-3.svg",
+        "alt": "Client 3"
+      },
+      {
+        "id": "client-4",
+        "src": "/images/logos/client-logo-4.svg",
+        "alt": "Client 4"
+      },
+      {
+        "id": "client-5",
+        "src": "/images/logos/client-logo-5.svg",
+        "alt": "Client 5"
+      },
+      {
+        "id": "client-6",
+        "src": "/images/logos/client-logo-6.svg",
+        "alt": "Client 6"
+      },
+      {
+        "id": "client-7",
+        "src": "/images/logos/client-logo-7.svg",
+        "alt": "Client 7"
+      }
     ]
   },
   "community": {
@@ -62,19 +123,28 @@
     "cards": [
       {
         "id": "membership-organisations",
-        "icon": { "src": "/images/icons/icon-membership.svg", "alt": "Membership icon" },
+        "icon": {
+          "src": "/images/icons/icon-membership.svg",
+          "alt": "Membership icon"
+        },
         "title": "Membership Organisations",
         "description": "Our membership management software provides full automation of membership renewals and payments"
       },
       {
         "id": "national-associations",
-        "icon": { "src": "/images/icons/icon-associations.svg", "alt": "Associations icon" },
+        "icon": {
+          "src": "/images/icons/icon-associations.svg",
+          "alt": "Associations icon"
+        },
         "title": "National Associations",
         "description": "Our membership management software provides full automation of membership renewals and payments"
       },
       {
         "id": "clubs-and-groups",
-        "icon": { "src": "/images/icons/icon-clubs.svg", "alt": "Clubs icon" },
+        "icon": {
+          "src": "/images/icons/icon-clubs.svg",
+          "alt": "Clubs icon"
+        },
         "title": "Clubs And Groups",
         "description": "Our membership management software provides full automation of membership renewals and payments"
       }
@@ -85,27 +155,33 @@
       "id": "feature-1",
       "imagePosition": "left",
       "image": {
-        "src": "/images/feature-illustration-1.svg",
+        "src": "/images/features/feature-illustration-1.svg",
         "alt": "Figures interacting with a mobile login interface",
         "width": 442,
         "height": 433
       },
       "title": "The unseen of spending three years at Pixelgrade",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.",
-      "cta": { "label": "Learn More", "href": "#feature-1-more" }
+      "cta": {
+        "label": "Learn More",
+        "href": "#feature-1-more"
+      }
     },
     {
       "id": "feature-2",
       "imagePosition": "left",
       "image": {
-        "src": "/images/feature-illustration-2.svg",
+        "src": "/images/features/feature-illustration-2.svg",
         "alt": "Person standing next to a phone showing a secure login UI",
         "width": 442,
         "height": 433
       },
       "title": "How to design your site footer like we did",
       "body": "Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc sollicitudin arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In viverra erat hendrerit nisi tempor vulputate. Ut ut eros tempor, tempor ante ut, exerci...",
-      "cta": { "label": "Learn More", "href": "#feature-2-more" }
+      "cta": {
+        "label": "Learn More",
+        "href": "#feature-2-more"
+      }
     }
   ],
   "stats": {
@@ -115,25 +191,37 @@
     "items": [
       {
         "id": "stat-members",
-        "icon": { "src": "/images/icons/icon-members.svg", "alt": "Members icon" },
+        "icon": {
+          "src": "/images/icons/icon-members.svg",
+          "alt": "Members icon"
+        },
         "value": "2,245,341",
         "label": "Members"
       },
       {
         "id": "stat-clubs",
-        "icon": { "src": "/images/icons/icon-clubs-stat.svg", "alt": "Clubs icon" },
+        "icon": {
+          "src": "/images/icons/icon-clubs-stat.svg",
+          "alt": "Clubs icon"
+        },
         "value": "46,328",
         "label": "Clubs"
       },
       {
         "id": "stat-events",
-        "icon": { "src": "/images/icons/icon-events.svg", "alt": "Event Bookings icon" },
+        "icon": {
+          "src": "/images/icons/icon-events.svg",
+          "alt": "Event Bookings icon"
+        },
         "value": "828,867",
         "label": "Event Bookings"
       },
       {
         "id": "stat-payments",
-        "icon": { "src": "/images/icons/icon-payments.svg", "alt": "Payments icon" },
+        "icon": {
+          "src": "/images/icons/icon-payments.svg",
+          "alt": "Payments icon"
+        },
         "value": "1,926,436",
         "label": "Payments"
       }
@@ -141,7 +229,7 @@
   },
   "testimonial": {
     "image": {
-      "src": "/images/tesla-image.png",
+      "src": "/images/testimonial/tesla-image.png",
       "alt": "Tesla emblem on dark background",
       "width": 326,
       "height": 326
@@ -150,14 +238,41 @@
     "authorName": "Tim Smith",
     "authorRole": "British Dragon Boat Racing Association",
     "clientLogos": [
-      { "id": "t-client-1", "src": "/images/logos/client-logo-1.svg", "alt": "Client 1" },
-      { "id": "t-client-2", "src": "/images/logos/client-logo-2.svg", "alt": "Client 2" },
-      { "id": "t-client-3", "src": "/images/logos/client-logo-3.svg", "alt": "Client 3" },
-      { "id": "t-client-4", "src": "/images/logos/client-logo-4.svg", "alt": "Client 4" },
-      { "id": "t-client-5", "src": "/images/logos/client-logo-5.svg", "alt": "Client 5" },
-      { "id": "t-client-6", "src": "/images/logos/client-logo-6.svg", "alt": "Client 6" }
+      {
+        "id": "t-client-1",
+        "src": "/images/logos/client-logo-8.svg",
+        "alt": "Client 1"
+      },
+      {
+        "id": "t-client-2",
+        "src": "/images/logos/client-logo-2.svg",
+        "alt": "Client 2"
+      },
+      {
+        "id": "t-client-3",
+        "src": "/images/logos/client-logo-3.svg",
+        "alt": "Client 3"
+      },
+      {
+        "id": "t-client-4",
+        "src": "/images/logos/client-logo-4.svg",
+        "alt": "Client 4"
+      },
+      {
+        "id": "t-client-5",
+        "src": "/images/logos/client-logo-5.svg",
+        "alt": "Client 5"
+      },
+      {
+        "id": "t-client-6",
+        "src": "/images/logos/client-logo-6.svg",
+        "alt": "Client 6"
+      }
     ],
-    "meetAllLink": { "label": "Meet all customers", "href": "#customers" }
+    "meetAllLink": {
+      "label": "Meet all customers",
+      "href": "#customers"
+    }
   },
   "blog": {
     "title": "Caring is the new marketing",
@@ -165,28 +280,55 @@
     "articles": [
       {
         "id": "article-1",
-        "image": { "src": "/images/article-1.jpg", "alt": "Person with beanie looking at a monitor", "width": 368, "height": 286 },
+        "image": {
+          "src": "/images/articles/article-1.jpg",
+          "alt": "Person with beanie looking at a monitor",
+          "width": 368,
+          "height": 286
+        },
         "title": "Creating Streamlined Safeguarding Processes with OneRen",
-        "link": { "label": "Readmore", "href": "#article-1" }
+        "link": {
+          "label": "Readmore",
+          "href": "#article-1"
+        }
       },
       {
         "id": "article-2",
-        "image": { "src": "/images/article-2.jpg", "alt": "Hands typing on a laptop next to a cup of coffee", "width": 368, "height": 286 },
+        "image": {
+          "src": "/images/articles/article-2.jpg",
+          "alt": "Hands typing on a laptop next to a cup of coffee",
+          "width": 368,
+          "height": 286
+        },
         "title": "What are your safeguarding responsibilities and how can you manage them?",
-        "link": { "label": "Readmore", "href": "#article-2" }
+        "link": {
+          "label": "Readmore",
+          "href": "#article-2"
+        }
       },
       {
         "id": "article-3",
-        "image": { "src": "/images/article-3.jpg", "alt": "Overhead angle of hands typing on laptop with notebook", "width": 368, "height": 286 },
+        "image": {
+          "src": "/images/articles/article-3.jpg",
+          "alt": "Overhead angle of hands typing on laptop with notebook",
+          "width": 368,
+          "height": 286
+        },
         "title": "Revamping the Membership Model with Triathlon Australia",
-        "link": { "label": "Readmore", "href": "#article-3" }
+        "link": {
+          "label": "Readmore",
+          "href": "#article-3"
+        }
       }
     ]
   },
   "cta": {
     "headlinePart1": "Pellentesque suscipit",
     "headlinePart2": "fringilla libero eu.",
-    "button": { "label": "Get a Demo", "href": "#demo" }
+    "button": {
+      "label": "Get a Demo",
+      "href": "#demo"
+    }
   },
   "footer": {
     "logo": {
@@ -197,32 +339,82 @@
     },
     "copyright": "Copyright © 2020 Nexcent ltd.\nAll rights reserved",
     "socialLinks": [
-      { "id": "instagram", "icon": "/images/icons/social-instagram.svg", "label": "Instagram", "href": "#instagram" },
-      { "id": "dribbble",  "icon": "/images/icons/social-dribbble.svg",  "label": "Dribbble",  "href": "#dribbble"  },
-      { "id": "twitter",   "icon": "/images/icons/social-twitter.svg",   "label": "Twitter",   "href": "#twitter"   },
-      { "id": "youtube",   "icon": "/images/icons/social-youtube.svg",   "label": "YouTube",   "href": "#youtube"   }
+      {
+        "id": "instagram",
+        "icon": "/images/icons/social-instagram.svg",
+        "label": "Instagram",
+        "href": "#instagram"
+      },
+      {
+        "id": "dribbble",
+        "icon": "/images/icons/social-dribble.svg",
+        "label": "Dribbble",
+        "href": "#dribbble"
+      },
+      {
+        "id": "twitter",
+        "icon": "/images/icons/social-twitter.svg",
+        "label": "Twitter",
+        "href": "#twitter"
+      },
+      {
+        "id": "youtube",
+        "icon": "/images/icons/social-youtube.svg",
+        "label": "YouTube",
+        "href": "#youtube"
+      }
     ],
     "columns": [
       {
         "id": "company",
         "heading": "Company",
         "links": [
-          { "label": "About us",    "href": "#about" },
-          { "label": "Blog",        "href": "#blog" },
-          { "label": "Contact us",  "href": "#contact" },
-          { "label": "Pricing",     "href": "#pricing" },
-          { "label": "Testimonials","href": "#testimonials" }
+          {
+            "label": "About us",
+            "href": "#about"
+          },
+          {
+            "label": "Blog",
+            "href": "#blog"
+          },
+          {
+            "label": "Contact us",
+            "href": "#contact"
+          },
+          {
+            "label": "Pricing",
+            "href": "#pricing"
+          },
+          {
+            "label": "Testimonials",
+            "href": "#testimonials"
+          }
         ]
       },
       {
         "id": "support",
         "heading": "Support",
         "links": [
-          { "label": "Help center",      "href": "#help" },
-          { "label": "Terms of service", "href": "#terms" },
-          { "label": "Legal",            "href": "#legal" },
-          { "label": "Privacy policy",   "href": "#privacy" },
-          { "label": "Status",           "href": "#status" }
+          {
+            "label": "Help center",
+            "href": "#help"
+          },
+          {
+            "label": "Terms of service",
+            "href": "#terms"
+          },
+          {
+            "label": "Legal",
+            "href": "#legal"
+          },
+          {
+            "label": "Privacy policy",
+            "href": "#privacy"
+          },
+          {
+            "label": "Status",
+            "href": "#status"
+          }
         ]
       }
     ],

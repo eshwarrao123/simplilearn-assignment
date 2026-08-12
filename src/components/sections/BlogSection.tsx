@@ -1,54 +1,50 @@
 // Server Component.
 import Image from "next/image";
+import Link from "next/link";
 import SectionHeader from "@/src/components/ui/SectionHeader";
-import Button from "@/src/components/ui/Button";
 import type { BlogData } from "@/src/types/landing-page";
 
 interface BlogSectionProps {
   data: BlogData;
 }
 
-/**
- * Blog / Community Updates section — 3-column card grid.
- * Cards have a photo on top and an overlapping white text box below.
- * Background: White.
- * All content from BlogData prop.
- */
 export default function BlogSection({ data }: BlogSectionProps) {
   return (
-    <section id="blog" aria-label="Community Updates" className="bg-neutral-white">
-      <div className="mx-auto max-w-content px-6 md:px-12 lg:px-[144px] py-12">
-        <div className="flex flex-col items-center gap-12">
-          <SectionHeader
-            title={data.title}
-            subtitle={data.subtitle}
-          />
+    <section id="blog" aria-label="Community Updates" className="bg-white">
+      <div
+        className="mx-auto px-6 md:px-12 lg:px-[144px] py-12 md:py-16 lg:py-20"
+        style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
+      >
+        <div className="flex flex-col items-center gap-10 md:gap-14">
+          <SectionHeader title={data.title} subtitle={data.subtitle} />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 w-full pb-8">
             {data.articles.map((article) => (
               <article
                 key={article.id}
-                className="flex flex-col"
+                className="flex flex-col items-center relative"
               >
-                {/* Photo */}
-                <div className="w-full overflow-hidden rounded-t-[var(--radius-card)]">
+                {/* Article image */}
+                <div className="relative w-full h-[286px] rounded-lg overflow-hidden flex-shrink-0">
                   <Image
                     src={article.image.src}
                     alt={article.image.alt}
-                    width={article.image.width}
-                    height={article.image.height}
-                    className="w-full h-[286px] object-cover"
+                    fill
+                    unoptimized
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover"
                   />
                 </div>
 
-                {/* Overlapping text box */}
+                {/* Overlapping text container */}
                 <div
-                  className="bg-neutral-white -mt-10 mx-4 relative z-10 flex flex-col gap-4 p-4 rounded-[var(--radius-card)]"
+                  className="relative w-[90%] -mt-24 p-4 md:p-5 lg:p-6 bg-[#F5F7FA] rounded-lg text-center flex flex-col items-center justify-between gap-4 min-h-[176px] transition-shadow duration-300 hover:shadow-card-hover"
                   style={{ boxShadow: "var(--shadow-card-hover)" }}
                 >
                   <h3
-                    className="text-neutral-black font-semibold"
+                    className="font-semibold text-center"
                     style={{
+                      color: "var(--color-neutral-dgrey)",
                       fontSize: "var(--font-size-h4)",
                       lineHeight: "var(--line-height-h4)",
                     }}
@@ -56,12 +52,17 @@ export default function BlogSection({ data }: BlogSectionProps) {
                     {article.title}
                   </h3>
 
-                  <Button
-                    label={article.link.label}
+                  <Link
                     href={article.link.href}
-                    variant="link"
-                    showArrow
-                  />
+                    className="inline-flex items-center gap-2 font-semibold transition-colors duration-200 hover:text-brand-shade-2 mt-auto"
+                    style={{
+                      color: "var(--color-brand-primary)",
+                      fontSize: "var(--font-size-body1)",
+                    }}
+                  >
+                    {article.link.label}
+                    <span aria-hidden="true">→</span>
+                  </Link>
                 </div>
               </article>
             ))}

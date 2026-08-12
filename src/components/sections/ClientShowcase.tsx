@@ -7,31 +7,38 @@ interface ClientShowcaseProps {
   data: ClientsData;
 }
 
-/**
- * Social proof logo bar.
- * Background: White.
- * All content from ClientsData prop.
- */
 export default function ClientShowcase({ data }: ClientShowcaseProps) {
   return (
-    <section id="clients" aria-label="Our Clients" className="bg-neutral-white">
-      <div className="mx-auto max-w-content px-6 md:px-12 lg:px-[144px] py-10">
-        <div className="flex flex-col items-center gap-10">
+    <section
+      id="clients"
+      aria-label="Our Clients"
+      className="bg-white border-b border-neutral-silver"
+    >
+      <div
+        className="mx-auto px-6 md:px-12 lg:px-[144px] py-10 md:py-12"
+        style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
+      >
+        <div className="flex flex-col items-center gap-8 md:gap-10">
           <SectionHeader title={data.title} subtitle={data.subtitle} />
 
           <div
-            className="flex flex-wrap items-center justify-center gap-10 md:gap-12 w-full"
+            className="flex flex-wrap items-center justify-center gap-8 md:gap-10 lg:gap-14 w-full"
             role="list"
             aria-label="Client logos"
           >
             {data.logos.map((logo) => (
-              <div key={logo.id} role="listitem">
+              <div
+                key={logo.id}
+                role="listitem"
+                className="flex items-center justify-center"
+              >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={100}
-                  height={48}
-                  className="object-contain h-10 w-auto opacity-80 hover:opacity-100 transition-opacity duration-200 grayscale hover:grayscale-0"
+                  width={120}
+                  height={40}
+                  unoptimized
+                  className="h-8 md:h-10 w-auto object-contain transition-transform duration-200 hover:scale-105"
                 />
               </div>
             ))}

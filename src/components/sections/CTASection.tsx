@@ -6,11 +6,6 @@ interface CTASectionProps {
   data: CTAData;
 }
 
-/**
- * Final conversion CTA section.
- * Background: Silver (#F5F7FA).
- * All content from CTAData prop.
- */
 export default function CTASection({ data }: CTASectionProps) {
   return (
     <section
@@ -18,17 +13,21 @@ export default function CTASection({ data }: CTASectionProps) {
       aria-label="Get a demo"
       style={{ backgroundColor: "var(--color-neutral-silver)" }}
     >
-      <div className="mx-auto max-w-content px-6 md:px-12 lg:px-[144px] py-12">
+      <div
+        className="mx-auto px-6 md:px-12 lg:px-[144px] py-14 md:py-20"
+        style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
+      >
         <div className="flex flex-col items-center text-center gap-8">
           <h2
-            className="text-neutral-black font-semibold max-w-lg"
+            className="font-semibold max-w-[640px] text-center"
             style={{
-              fontSize: "var(--font-size-h1)",
+              color: "var(--color-neutral-black)",
+              fontSize: "clamp(2rem, 4.5vw, var(--font-size-h1))",
               lineHeight: "var(--line-height-h1)",
             }}
           >
             {data.headlinePart1}{" "}
-            {data.headlinePart2}
+            <span className="block">{data.headlinePart2}</span>
           </h2>
 
           <Button
@@ -36,7 +35,7 @@ export default function CTASection({ data }: CTASectionProps) {
             href={data.button.href}
             variant="primary"
             size="lg"
-            showArrow
+            showArrow={true}
           />
         </div>
       </div>

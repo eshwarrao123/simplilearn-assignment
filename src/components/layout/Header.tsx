@@ -1,10 +1,8 @@
 // Server Component.
-// Mobile nav toggle will eventually require a thin "use client" wrapper for the
-// hamburger state — but we keep the layout component itself a Server Component
-// and the interactive toggle isolated in a future MobileMenuButton.tsx.
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/src/components/ui/Button";
+import MobileMenu from "@/src/components/layout/MobileMenu";
 import type { NavData } from "@/src/types/landing-page";
 
 interface HeaderProps {
@@ -13,25 +11,32 @@ interface HeaderProps {
 
 /**
  * Site-wide sticky navigation bar.
- * Receives all content — logo, nav links, action buttons — through `data` prop.
- * No hardcoded copy.
+ * Desktop: logo | nav links | login + sign up
+ * Mobile: logo | hamburger (MobileMenu — client component)
  */
 export default function Header({ data }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-50 w-full bg-neutral-silver">
-      <div className="mx-auto max-w-content px-6 md:px-12 lg:px-[144px]">
+    <header
+      className="sticky top-0 z-50 w-full"
+      style={{ backgroundColor: "var(--color-neutral-silver)" }}
+    >
+      <div
+        className="mx-auto px-6 md:px-12 lg:px-[144px]"
+        style={{ maxWidth: "calc(var(--max-width-content) + 288px)" }}
+      >
         <nav
-          className="flex h-[84px] items-center justify-between gap-8"
+          className="relative flex h-[84px] items-center justify-between"
           aria-label="Main navigation"
         >
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" aria-label="Nexcent home" className="flex-shrink-0">
             <Image
               src={data.logo.src}
               alt={data.logo.alt}
               width={data.logo.width}
               height={data.logo.height}
               priority
+              unoptimized
             />
           </Link>
 
@@ -41,8 +46,9 @@ export default function Header({ data }: HeaderProps) {
               <li key={item.label}>
                 <Link
                   href={item.href}
-                  className="text-neutral-dgrey hover:text-brand-primary transition-colors duration-200"
+                  className="font-medium transition-colors duration-200 hover:text-brand-primary"
                   style={{
+                    color: "var(--color-neutral-dgrey)",
                     fontSize: "var(--font-size-body2)",
                     lineHeight: "var(--line-height-body2)",
                   }}
@@ -53,12 +59,13 @@ export default function Header({ data }: HeaderProps) {
             ))}
           </ul>
 
-          {/* Actions */}
-          <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
+          {/* Desktop CTA actions */}
+          <div className="hidden lg:flex items-center gap-6 flex-shrink-0">
             <Button
               label={data.actions.login.label}
               href={data.actions.login.href}
               variant="link"
+              showArrow={false}
             />
             <Button
               label={data.actions.signup.label}
@@ -68,16 +75,8 @@ export default function Header({ data }: HeaderProps) {
             />
           </div>
 
-          {/* Mobile hamburger placeholder — will be a "use client" component later */}
-          <button
-            className="lg:hidden flex flex-col gap-1.5 p-2"
-            aria-label="Open navigation menu"
-            type="button"
-          >
-            <span className="block w-6 h-0.5 bg-neutral-dgrey" />
-            <span className="block w-6 h-0.5 bg-neutral-dgrey" />
-            <span className="block w-6 h-0.5 bg-neutral-dgrey" />
-          </button>
+          {/* Mobile hamburger — client component */}
+          <MobileMenu links={data.links} actions={data.actions} />
         </nav>
       </div>
     </header>
