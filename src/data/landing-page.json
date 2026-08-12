@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "Nexcent — Lessons and Insights from 8 Years",
+    "description": "Where to grow your business as a photographer: site or social media? Manage your entire community in a single system with Nexcent."
+  },
+  "nav": {
+    "logo": {
+      "src": "/images/logos/logo.svg",
+      "alt": "Nexcent",
+      "width": 154,
+      "height": 32
+    },
+    "links": [
+      { "label": "Home",        "href": "#hero" },
+      { "label": "Service",     "href": "#community" },
+      { "label": "Feature",     "href": "#feature-1" },
+      { "label": "Product",     "href": "#stats" },
+      { "label": "Testimonial", "href": "#testimonial" },
+      { "label": "FAQ",         "href": "#faq" }
+    ],
+    "actions": {
+      "login":  { "label": "Login",   "href": "#login" },
+      "signup": { "label": "Sign up", "href": "#signup" }
+    }
+  },
+  "hero": {
+    "headlinePart1": "Lessons and insights",
+    "headlinePart2": "from 8 years",
+    "subtitle": "Where to grow your business as a photographer: site or social media?",
+    "cta": {
+      "label": "Register",
+      "href": "#register"
+    },
+    "image": {
+      "src": "/images/hero-illustration.svg",
+      "alt": "Developer working with laptop and wireframe UI",
+      "width": 632,
+      "height": 657
+    },
+    "indicators": [
+      { "id": 1, "active": true },
+      { "id": 2, "active": false },
+      { "id": 3, "active": false }
+    ]
+  },
+  "clients": {
+    "title": "Our Clients",
+    "subtitle": "We have been working with some Fortune 500+ clients",
+    "logos": [
+      { "id": "client-1", "src": "/images/logos/client-logo-1.svg", "alt": "Client 1" },
+      { "id": "client-2", "src": "/images/logos/client-logo-2.svg", "alt": "Client 2" },
+      { "id": "client-3", "src": "/images/logos/client-logo-3.svg", "alt": "Client 3" },
+      { "id": "client-4", "src": "/images/logos/client-logo-4.svg", "alt": "Client 4" },
+      { "id": "client-5", "src": "/images/logos/client-logo-5.svg", "alt": "Client 5" },
+      { "id": "client-6", "src": "/images/logos/client-logo-6.svg", "alt": "Client 6" },
+      { "id": "client-7", "src": "/images/logos/client-logo-7.svg", "alt": "Client 7" }
+    ]
+  },
+  "community": {
+    "title": "Manage your entire community in a single system",
+    "subtitle": "Who is Nextcent suitable for?",
+    "cards": [
+      {
+        "id": "membership-organisations",
+        "icon": { "src": "/images/icons/icon-membership.svg", "alt": "Membership icon" },
+        "title": "Membership Organisations",
+        "description": "Our membership management software provides full automation of membership renewals and payments"
+      },
+      {
+        "id": "national-associations",
+        "icon": { "src": "/images/icons/icon-associations.svg", "alt": "Associations icon" },
+        "title": "National Associations",
+        "description": "Our membership management software provides full automation of membership renewals and payments"
+      },
+      {
+        "id": "clubs-and-groups",
+        "icon": { "src": "/images/icons/icon-clubs.svg", "alt": "Clubs icon" },
+        "title": "Clubs And Groups",
+        "description": "Our membership management software provides full automation of membership renewals and payments"
+      }
+    ]
+  },
+  "featureSections": [
+    {
+      "id": "feature-1",
+      "imagePosition": "left",
+      "image": {
+        "src": "/images/feature-illustration-1.svg",
+        "alt": "Figures interacting with a mobile login interface",
+        "width": 442,
+        "height": 433
+      },
+      "title": "The unseen of spending three years at Pixelgrade",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.",
+      "cta": { "label": "Learn More", "href": "#feature-1-more" }
+    },
+    {
+      "id": "feature-2",
+      "imagePosition": "left",
+      "image": {
+        "src": "/images/feature-illustration-2.svg",
+        "alt": "Person standing next to a phone showing a secure login UI",
+        "width": 442,
+        "height": 433
+      },
+      "title": "How to design your site footer like we did",
+      "body": "Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc sollicitudin arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In viverra erat hendrerit nisi tempor vulputate. Ut ut eros tempor, tempor ante ut, exerci...",
+      "cta": { "label": "Learn More", "href": "#feature-2-more" }
+    }
+  ],
+  "stats": {
+    "headlinePart1": "Helping a local",
+    "headlinePart2": "business reinvent itself",
+    "subtitle": "We reached here with our hard work and dedication",
+    "items": [
+      {
+        "id": "stat-members",
+        "icon": { "src": "/images/icons/icon-members.svg", "alt": "Members icon" },
+        "value": "2,245,341",
+        "label": "Members"
+      },
+      {
+        "id": "stat-clubs",
+        "icon": { "src": "/images/icons/icon-clubs-stat.svg", "alt": "Clubs icon" },
+        "value": "46,328",
+        "label": "Clubs"
+      },
+      {
+        "id": "stat-events",
+        "icon": { "src": "/images/icons/icon-events.svg", "alt": "Event Bookings icon" },
+        "value": "828,867",
+        "label": "Event Bookings"
+      },
+      {
+        "id": "stat-payments",
+        "icon": { "src": "/images/icons/icon-payments.svg", "alt": "Payments icon" },
+        "value": "1,926,436",
+        "label": "Payments"
+      }
+    ]
+  },
+  "testimonial": {
+    "image": {
+      "src": "/images/tesla-image.png",
+      "alt": "Tesla emblem on dark background",
+      "width": 326,
+      "height": 326
+    },
+    "quote": "Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.",
+    "authorName": "Tim Smith",
+    "authorRole": "British Dragon Boat Racing Association",
+    "clientLogos": [
+      { "id": "t-client-1", "src": "/images/logos/client-logo-1.svg", "alt": "Client 1" },
+      { "id": "t-client-2", "src": "/images/logos/client-logo-2.svg", "alt": "Client 2" },
+      { "id": "t-client-3", "src": "/images/logos/client-logo-3.svg", "alt": "Client 3" },
+      { "id": "t-client-4", "src": "/images/logos/client-logo-4.svg", "alt": "Client 4" },
+      { "id": "t-client-5", "src": "/images/logos/client-logo-5.svg", "alt": "Client 5" },
+      { "id": "t-client-6", "src": "/images/logos/client-logo-6.svg", "alt": "Client 6" }
+    ],
+    "meetAllLink": { "label": "Meet all customers", "href": "#customers" }
+  },
+  "blog": {
+    "title": "Caring is the new marketing",
+    "subtitle": "The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.",
+    "articles": [
+      {
+        "id": "article-1",
+        "image": { "src": "/images/article-1.jpg", "alt": "Person with beanie looking at a monitor", "width": 368, "height": 286 },
+        "title": "Creating Streamlined Safeguarding Processes with OneRen",
+        "link": { "label": "Readmore", "href": "#article-1" }
+      },
+      {
+        "id": "article-2",
+        "image": { "src": "/images/article-2.jpg", "alt": "Hands typing on a laptop next to a cup of coffee", "width": 368, "height": 286 },
+        "title": "What are your safeguarding responsibilities and how can you manage them?",
+        "link": { "label": "Readmore", "href": "#article-2" }
+      },
+      {
+        "id": "article-3",
+        "image": { "src": "/images/article-3.jpg", "alt": "Overhead angle of hands typing on laptop with notebook", "width": 368, "height": 286 },
+        "title": "Revamping the Membership Model with Triathlon Australia",
+        "link": { "label": "Readmore", "href": "#article-3" }
+      }
+    ]
+  },
+  "cta": {
+    "headlinePart1": "Pellentesque suscipit",
+    "headlinePart2": "fringilla libero eu.",
+    "button": { "label": "Get a Demo", "href": "#demo" }
+  },
+  "footer": {
+    "logo": {
+      "src": "/images/logos/logo-white.svg",
+      "alt": "Nexcent",
+      "width": 154,
+      "height": 32
+    },
+    "copyright": "Copyright © 2020 Nexcent ltd.\nAll rights reserved",
+    "socialLinks": [
+      { "id": "instagram", "icon": "/images/icons/social-instagram.svg", "label": "Instagram", "href": "#instagram" },
+      { "id": "dribbble",  "icon": "/images/icons/social-dribbble.svg",  "label": "Dribbble",  "href": "#dribbble"  },
+      { "id": "twitter",   "icon": "/images/icons/social-twitter.svg",   "label": "Twitter",   "href": "#twitter"   },
+      { "id": "youtube",   "icon": "/images/icons/social-youtube.svg",   "label": "YouTube",   "href": "#youtube"   }
+    ],
+    "columns": [
+      {
+        "id": "company",
+        "heading": "Company",
+        "links": [
+          { "label": "About us",    "href": "#about" },
+          { "label": "Blog",        "href": "#blog" },
+          { "label": "Contact us",  "href": "#contact" },
+          { "label": "Pricing",     "href": "#pricing" },
+          { "label": "Testimonials","href": "#testimonials" }
+        ]
+      },
+      {
+        "id": "support",
+        "heading": "Support",
+        "links": [
+          { "label": "Help center",      "href": "#help" },
+          { "label": "Terms of service", "href": "#terms" },
+          { "label": "Legal",            "href": "#legal" },
+          { "label": "Privacy policy",   "href": "#privacy" },
+          { "label": "Status",           "href": "#status" }
+        ]
+      }
+    ],
+    "newsletter": {
+      "heading": "Stay up to date",
+      "placeholder": "Your email address",
+      "submitLabel": "Send",
+      "submitIcon": "/images/icons/icon-send.svg"
+    }
+  }
+}

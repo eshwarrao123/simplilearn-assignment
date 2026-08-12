@@ -1,26 +1,109 @@
+/* =============================================================================
+   globals.css — Nexcent Design System
+   Tailwind CSS v4: tokens are declared inside @theme.
+   All color, typography, shadow, and radius tokens come from design.md.
+   ============================================================================= */
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* --------------------------------------------------------------------------- */
+/* Design Tokens — sourced from design.md §2, §3, §4, §5, §11                  */
+/* --------------------------------------------------------------------------- */
+@theme {
+  /* ---- Brand Colors ---- */
+  --color-brand-primary:   #4caf4f;
+  --color-brand-secondary: #263238;
+  --color-brand-info:      #2194f3;
+
+  /* Brand Primary Shades (darker) */
+  --color-brand-shade-1:   #43a046;
+  --color-brand-shade-2:   #388e3b;
+  --color-brand-shade-3:   #237d31;
+  --color-brand-shade-4:   #1b5e1f;
+  --color-brand-shade-5:   #103e13;
+
+  /* Brand Primary Tints (lighter) */
+  --color-brand-tint-1:    #66bb69;
+  --color-brand-tint-2:    #81c784;
+  --color-brand-tint-3:    #a5d6a7;
+  --color-brand-tint-4:    #c8e6c9;
+  --color-brand-tint-5:    #e8f5e9;
+
+  /* ---- Neutral Palette ---- */
+  --color-neutral-black:    #263238;
+  --color-neutral-dgrey:    #4d4d4d;
+  --color-neutral-grey:     #717171;
+  --color-neutral-lgrey:    #89939e;
+  --color-neutral-greyblue: #abbed1;
+  --color-neutral-silver:   #f5f7fa;
+  --color-neutral-white:    #ffffff;
+
+  /* ---- Status Colors ---- */
+  --color-status-warning: #fbc02d;
+  --color-status-error:   #e53835;
+  --color-status-success: #2e7d31;
+
+  /* ---- Typography: Font Family ---- */
+  /* --font-inter is injected by next/font/google onto the <html> element via .variable */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* ---- Typography: Font Sizes (design.md §3.1) ---- */
+  --font-size-h1:     4rem;      /* 64px */
+  --font-size-h2:     2.25rem;   /* 36px */
+  --font-size-h3:     1.75rem;   /* 28px */
+  --font-size-h4:     1.25rem;   /* 20px */
+  --font-size-body1:  1.125rem;  /* 18px */
+  --font-size-body2:  1rem;      /* 16px */
+  --font-size-body3:  0.875rem;  /* 14px */
+  --font-size-body4:  0.75rem;   /* 12px */
+
+  /* ---- Typography: Line Heights ---- */
+  --line-height-h1:    4.75rem;  /* 76px */
+  --line-height-h2:    2.75rem;  /* 44px */
+  --line-height-h3:    2.25rem;  /* 36px */
+  --line-height-h4:    1.75rem;  /* 28px */
+  --line-height-body1: 1.75rem;  /* 28px */
+  --line-height-body2: 1.5rem;   /* 24px */
+  --line-height-body3: 1.25rem;  /* 20px */
+  --line-height-body4: 1rem;     /* 16px */
+
+  /* ---- Spacing ---- */
+  --max-width-content: 72rem;    /* 1152px — main content container */
+
+  /* ---- Border Radius (design.md §4) ---- */
+  --radius-btn:  0.25rem;   /* 4px  — buttons */
+  --radius-card: 0.5rem;    /* 8px  — cards */
+  --radius-icon: 1.125rem;  /* 18px — icon containers */
+
+  /* ---- Shadows (design.md §4) ---- */
+  --shadow-card:       0px 2px 4px rgba(171, 190, 209, 0.2);
+  --shadow-card-hover: 0px 8px 16px rgba(171, 190, 209, 0.35);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* --------------------------------------------------------------------------- */
+/* Base Styles                                                                   */
+/* --------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-black);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
 }
