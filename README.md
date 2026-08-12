@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nexcent Landing Page — SDE-1 Assessment Implementation
 
-## Getting Started
+A pixel-accurate, fully responsive, server-rendered implementation of the Nexcent landing page built with **Next.js 15 (App Router)**, **TypeScript**, and **Tailwind CSS v4**, strictly following the provided Figma design specs and design system tokens.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Key Architectural Highlights
+
+- **100% Data-Driven Content:** Zero hardcoded copy in presentation components. All text, images, CTA links, section items, stats, testimonials, and navigation links flow from a centralized, typed JSON data store (`src/data/landing-page.json`).
+- **Server-First Component Model:** All section layouts are React Server Components by default. Client components (`MobileMenu.tsx`) are strictly limited to interactive browser-side features.
+- **Pixel-Accurate Figma Alignment:** Custom design tokens mapped in `app/globals.css` (`--color-brand-primary`, `--font-size-h1`, `--radius-card`, etc.) matching the design specification (`design.md`).
+- **Fully Responsive Layout:** Verified smooth adaptability across all standard breakpoints down to 360px mobile viewports without horizontal scrolling or content clipping.
+- **Accessible & Semantic HTML:** Built with HTML5 semantic elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`), keyboard navigation, ARIA attributes, and optimized self-hosted Google Fonts (`Inter`).
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15 (App Router, Turbopack)
+- **Language:** TypeScript (Strict Type Checking)
+- **Styling:** Tailwind CSS v4 & CSS Variables (`globals.css`)
+- **Typography:** `next/font/google` (Inter font family)
+- **Media Optimization:** `next/image` with SVG/PNG asset optimization
+
+---
+
+## 📂 Project Structure
+
+```text
+├── app/
+│   ├── favicon.ico
+│   ├── globals.css         # Custom CSS tokens & Tailwind directives
+│   ├── layout.tsx          # Root layout with Inter font injection & Metadata
+│   └── page.tsx            # Root Server Component assembling JSON-driven sections
+├── src/
+│   ├── components/
+│   │   ├── layout/         # Navigation & Footer components
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Header.tsx
+│   │   │   └── MobileMenu.tsx
+│   │   ├── sections/       # Modular section components
+│   │   │   ├── BlogSection.tsx
+│   │   │   ├── ClientShowcase.tsx
+│   │   │   ├── CommunitySection.tsx
+│   │   │   ├── CTASection.tsx
+│   │   │   ├── FeatureSection.tsx
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── StatsSection.tsx
+│   │   │   └── TestimonialSection.tsx
+│   │   └── ui/             # Atomic reusable primitives
+│   │       ├── Button.tsx
+│   │       └── SectionHeader.tsx
+│   ├── data/
+│   │   └── landing-page.json # Single source of truth for landing page content
+│   ├── lib/
+│   │   └── utils.ts        # Tailwind class merge helper
+│   └── types/
+│       └── landing-page.ts # TypeScript interfaces for content schema
+├── public/
+│   └── images/             # Standardized visual assets exported from Figma
+│       ├── articles/
+│       ├── features/
+│       ├── hero/
+│       ├── icons/
+│       ├── logos/
+│       └── testimonial/
+├── design.md               # Visual design tokens & layout specifications
+├── README.md               # Assessment documentation
+├── next.config.ts          # Next.js configuration
+├── tsconfig.json           # TypeScript configuration
+├── postcss.config.mjs      # PostCSS configuration
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Local Development Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Prerequisites
+Ensure Node.js `v18.x` or higher and `npm` are installed on your machine.
 
-## Learn More
+### 2. Installation
+Clone the repository and install dependencies:
+```bash
+git clone <repository-url>
+cd simplilearn-assignment
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Development Server
+Run the Next.js development server:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧪 Verification & Build Commands
 
-## Deploy on Vercel
+- **Code Formatting & Linting:**
+  ```bash
+  npm run lint
+  ```
+- **TypeScript Type Checking:**
+  ```bash
+  npx tsc --noEmit
+  ```
+- **Production Build:**
+  ```bash
+  npm run build
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Figma Source & Reference
+- **Figma Design File:** [Minimal Landing Page Design | Community](https://www.figma.com/design/NX5vl6kszVZ0OFVLAKJtSn/Minimal-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design--Community-?node-id=213-948)
+- **Node Identifier:** `213-948`
